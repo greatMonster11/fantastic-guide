@@ -856,6 +856,10 @@
   background-color: rgba(29, 161, 242, 0.1);
 }
 
+.darkdots {
+  color: rgb(91, 112, 131) !important;
+}
+
 .input-item__item svg {
   width: 1.5rem;
   height: 1.5rem;
@@ -934,6 +938,7 @@
   border-bottom-color: rgb(235, 238, 240);
   outline-style: none;
   display: block;
+  padding-top: 12px;
 }
 
 .article__container {
@@ -963,7 +968,10 @@
   transition-duration: 0.2s;
   width: 100%;
   overflow: hidden;
+  border-width: 1px;
   border-radius: 9999px;
+  border-color: rgba(0, 0, 0, 0.04);
+  box-shadow: rgb(0 0 0 / 2%) 0px 0px 2px inset;
 }
 
 .article-owner-avatar__link:hover {
@@ -984,4 +992,96 @@
   right: 0px;
   left: 0px;
   bottom: 0px;
+}
+
+.article-content-wrapper {
+  padding-bottom: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.article-author-name__container {
+  margin-bottom: 2px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.article-author-name__outer {
+  align-items: baseline;
+  flex-shrink: 1;
+  outline-style: none;
+  max-width: 100%;
+  flex-direction: row;
+}
+
+.article-author-name__outer:hover .author-name {
+  text-decoration: underline;
+}
+
+.article-author-name {
+  align-items: center;
+  flex-direction: row;
+}
+
+.author-name {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(15, 20, 25);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  min-width: 0px;
+  margin-right: 4px;
+}
+
+.article-author-dot {
+  color: rgb(91, 112, 131);
+  flex-shrink: 0;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  min-width: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  white-space: nowrap;
+}
+
+.article-author-dot span {
+  font-family: inherit;
+  overflow-wrap: break-word;
+  min-width: 0px;
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.article-author-published {
+  color: rgb(91, 112, 131);
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  min-width: 0px;
+}
+
+.article-author-threedot {
+  justify-content: flex-start;
+  margin-left: 20px;
+  flex-direction: row;
+}
+
+.article-author-threedot__inner {
 }
